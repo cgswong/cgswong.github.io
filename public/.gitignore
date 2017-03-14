@@ -1,0 +1,12 @@
+## Mac trashcan
+.DS_Store
+
+## IDE
+.idea
+
+## Security don't
+*.pem
+*.pub
+
+## Static sites
+site/

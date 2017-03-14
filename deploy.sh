@@ -32,4 +32,4 @@ git commit -m "${GIT_MSG}"
 git push origin "${GIT_SRC_BRANCH}"
 
 log "Pushing the updated \`${GIT_DST_DIR}\` folder to the \`${GIT_DST_BRANCH}\` branch"
-git subtree push --prefix=${GIT_DST_DIR} git@github.com:${GIT_USERNAME}/${GIT_USERNAME}.github.io.git ${GIT_SRC_BRANCH}
+git subtree push --prefix=${GIT_DST_DIR} git@github.com:${GIT_USERNAME}/${GIT_USERNAME}.github.io.git ${GIT_DST_BRANCH}

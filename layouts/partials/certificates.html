@@ -1,0 +1,9 @@
+            <div class="certificates-container container-block">
+                <h2 class="container-block-title">{{ .Site.Params.certificates.title }}</h2>
+				{{ range .Site.Params.certificates.list }}
+                <div class="item">
+                    <h5 class="title">{{ .title }}</h5>
+                    <img class="cert" src="{{ .Site.BaseURL }}assets/images/{{ .cert }}" alt="" />
+                </div><!--//item-->
+				{{ end }}
+            </div><!--//certificates-container-->

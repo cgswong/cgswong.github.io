@@ -1,0 +1,261 @@
+# Page settings
+
+baseurl = "http://cgswong.github.io/"
+languageCode = "en-us"
+title = "Carrington Wong Resume"
+theme = "hugo-orbit-theme"
+#googleAnalytics = "UA-XXXXXXX-Y"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+# Meta
+    description = "Resume for Carrington Wong"
+    author = "Carrington Wong"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Carrington Wong"
+        tagline = "Architect and Engineer"
+        avatar = "profile.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: cgs.wong@gmail.com"
+        title = "cgs.wong@gmail.com"
+
+        [[params.contact.list]]
+        class = "phone"
+        icon = "fa-phone"
+        url = "tel:+7323064217"
+        title = "+7323064217"
+
+        [[params.contact.list]]
+        class = "website"
+        icon = "fa-globe"
+        url = "//cgswong.github.io"
+        title = "cgswong.github.io"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//linkedin.com/in/cgswong"
+        title = "linkedin.com/in/cgswong"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/cgswong"
+        title = "github.com/cgswong"
+
+        [[params.contact.list]]
+        class = "twitter"
+        icon = "fa-twitter"
+        url = "//twitter.com/cgswong"
+        title = "@cgswong"
+
+    # Education section
+    [params.certificates]
+        enable = true
+        title = "Certifications"
+
+        [[params.certificates.list]]
+        title = "AWS Certified Solutions Architect - Associate"
+        cert = "aws-solutions-architect-associate.png"
+
+        [[params.certificates.list]]
+        title = "Oracle Certified Expert - RAC 11g and Grid Infrastructure"
+        cert = "oracle-rac-11g-professional.png"
+
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "BSc in Computer Science and Electronics"
+        college = "University of the West Indies, Mona"
+        dates = "1996 - 2000"
+
+    # Languages section
+    [params.languages]
+        enable = true
+        title = "Languages"
+
+        [[params.languages.list]]
+        language = "English"
+        level = "Native"
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Soccer and other sports"
+
+        [[params.interests.list]]
+        interest = "Outdoor activities"
+
+        [[params.interests.list]]
+        interest = "Technology"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "I have 15+ years of experience in the realm of IT services including System and Database Administration, Infrastructure Engineering and Architecture. I have a unique perspective having a been a part of various teams with varying responsibilities and roles, including management. I am quite adaptable to any given situation with experiences from startup to large enterprises such as fortune 200 companies, and am able to work in any environment. I am driven by a hunger for self-improvement, to impart what I have learned to others and thrive on challenges!"
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Solutions Architect and Infrastructure Engineer"
+        dates = "2014 - Present"
+        company = "Monsanto, St. Louis"
+        details = "Provide architecture guidance and manage AWS environment, as well as infrastructure engineering functions for various services. Leverage open source technologies where appropriate, to build scalable, fault-tolerant, and cost effective solutions in AWS to support enterprise business functions. Provide mentoring and guidance to different teams and services. Accomplishments include:\n\n- Architected and built AWS environment to service the Data Platform team while providing guidance to other teams.\n- Architected, and engineered enterprise Geospatial platform in AWS using agile methodologies and open source components saving the business significant license costs, allowed new functionality and capabilities, improved performance and increased availability.\n- Architected, engineered and evangelized Heimdall, logging and monitoring service, in AWS using open source technologies (Beats, Logstash, Prometheus, Elasticsearch, and Grafana).\n- Engineered deployment pipeline using open source technologies (Packer, Ansible, Chef, Jenkins, and Vault) for AWS AMIs which reduced build and deployment times.\n- Architected, engineered and evangelized data streaming pipeline solution based on open source Confluent Platform (Apache ZooKeeper, Apache Kafka, REST Proxy, Schema Registry) and MirrorMaker using custom Docker images and AWS services to serve critical business needs.\n- Migrated from Pivotal Cloud Foundry platform to open source Cloud Foundry saving license costs.\n- Key member in engineering and building out a custom PaaS environment based on open source components (CoreOS, Etcd, Fleet, Consul, Docker, Nginx, Prometheus, Logstash, Elasticsearch, Kibana) and AWS services to serve internal developers\n- Provide ongoing evaluation of open source technologies including Kubernetes, Vault, Terraform, etc."
+
+        [[params.jobs.list]]
+        position = "Infrastructure Engineer"
+        dates = "2012 - 2014"
+        company = "Monsanto, St. Louis"
+        details = "Provided architecture guidance and engineering functions for the middleware and database platforms and teams including mentoring. Accomplishments included:\n\n- Upgraded and virtualized Oracle Service Bus (10g to 11g) and Oracle WebLogic Server (10g to 12c) environments resulting in $250K savings to the business.\n- Designed and managed migration of tier 2 Oracle database environment to a more standard and consistent VMware environment.\n- Engineered and implemented Ancestry as as Service (AaaS) solution using Neo4j (graph database) resulting in significant query time reductions (from weeks to minutes compared to existing service at the time) and providing new capabilities and functions.\n- Architect, and engineered an upgraded, centralized Oracle Enterprise Manager (10g/11g to 12c) environment resulting in improved monitoring capabilities and management efficiencies.\n- Architect, and engineered upgrade to new Oracle Internet Directory (10g to 11g) environment resulting in improved reliability and support.\n- Designed, evaluated and implemented a data virtualization service using MySQL master-slave database"
+
+        [[params.jobs.list]]
+        position = "Senior Database Engineer"
+        dates = "2008 - 2012"
+        company = "Monsanto, St. Louis"
+        details = "Engineered and managed various enterprise database solutions as well provided 24x7 on-call support. Key accomplishments:\n\n- Key member of team which saved over $500K in support and maintenance costs, improved performance by 3x and reduced storage costs by 5x by updating, migrating and consolidating multiple single instance Oracle databases from IBM Power to Oracle Exadata RAC databases.\n- Engineered and led Oracle 11gR2 RAC migration and designed maintenance processes.\n- Developed best practices and SoP which provided consistency and standardization.\n- Designed Oracle patching and maintenance strategy which improved efficiencies by 2x.\n- Improved reporting efficiency by 3x and saved costs by implementing enterprise ETL solution using Informatica PowerCenter.\n- Saved over $100K in costs by implementing Oracle Grid Control 11g as enterprise database monitoring solution.\n- Engineered software distribution solution for client and database software.\n- Conducted benchmarking (using ORION and Swingbench), performance analysis amd tuning of solutions and designs.\n- Engineered improved database clone process resulting in process improvement from 3 days to 4 hours.\n- Engineered and led Oracle 11g upgrade process ensuring continued supportability of Oracle environment and cost savings.\n- Designed and deployed enterprise-wide Oracle statistics process resulting in improved consistency and predictable database query performance.\n- Engineered Oracle Configuration Manager (OCM) process which improved DBA visibility and efficiencies.\n- Provided guidance and support in SAN storage design for databases which resulted in improved performance."
+
+        [[params.jobs.list]]
+        position = "IT Operations Manager"
+        dates = "04/2007 - 12/2007"
+        company = "Digicel, Kingston (Jamaica)"
+        details = "Lead an IT Operations team responsible for global IT infrastructure, including phone and data network, helpdesk, database management and server management for a multi-million dollar communications company.\n\n- Provided mentoring and guidance to talented team of database and system administrators.\n- Designed and implemented improvements to business continuity plans and capabilities.\n- Improved availability of billing application by implementing Oracle10g RAC (Solaris) solution\n- Improved performance of business reporting system by migrating to new data warehouse reporting platform\n- Designed and implemented capacity management process and system\n- Maintained 99.999% SLA\n- Improved storage performance by migrating to enterprise-level SAN (Hitachi USP)."
+
+        [[params.jobs.list]]
+        position = "Database Manager"
+        dates = "10/2005 - 03/2007"
+        company = "Digicel, Kingston (Jamaica)"
+        details = "Lead a team of Database Administrators responsible for global database management systems for a global multi-million dollar telecommunications company.\n\n- Provided mentoring, guidance and development and performance reviews.\n- Improved business continuity plans for database and server environments.\n- Designed and implemented database security compliance system.\n- Developed guidelines, and configuration management system for databases\n- Developed service level reports and maintained database SLAs.\n- Enacted capacity planning for databases.\n- Improved visibility into Oracle databases by implementing enterprise monitoring system using Oracle Grid Control."
+
+        [[params.jobs.list]]
+        position = "Senior Oracle DBA & System Administrator"
+        dates = "04/2002 - 09/2005"
+        company = "Digicel, Kingston (Jamaica)"
+        details = "Provided expert database and server administrative functions including 24x7 on-call support for a multi-million dollar telecommunications company.\n\n- Evaluated and implemented updates and upgrades for database and server releases and related tools.\n- Conducted capacity planning activities\n- Maintained 99.99% SLAs.\n- Provided weekly KPI management reports\n- Maintained operational data source (ODS) for enterprise reporting\n- Designed and implemented enterprise data warehouse for new enterprise reporting solution using Business Objects as reporting front-end\n- Improved storage operations and service level capabilities by implementing mid-tier SAN solution (Hitachi AMS)\n- Developed business continuity plans\n- Improved business capabilities by migrating to new postpaid billing system."
+
+        [[params.jobs.list]]
+        position = "Junior Oracle DBA & System Administrator"
+        dates = "04/2001 - 03/2002"
+        company = "Digicel, Kingston (Jamaica)"
+        details = "Provided database and server administrative functions including 24x7 on-call support for a startup telecommunications company.\n\n- Evaluated and provided recommendations on database and server releases and related tools.\n- Conducted capacity planning activities\n- Designed and implemented service level agreements\n- Improved business visibility by implementing a scheduled reporting system.\n- Architected and engineered Operational Data Source (ODS) for enterprise reporting which connected to in-house developed reporting solution resulting in reporting, and auditing efficiencies.\n- Maintained in-house and 3rd party applications including postpaid billing system."
+
+        [[params.jobs.list]]
+        position = "Systems Analyst"
+        dates = "04/2000 - 03/2001"
+        company = "Star Technologies Ltd., Kingston (Jamaica)"
+        details = "Designed, evaluated and implemented database and server systems; provided problem analysis and 24x7 on-call support for a global multi-million dollar insurance company.\n\n- Evaluated and implemented updates and upgrades for database and server releases, and related tools.\n- Effectively monitored and planned for database storage requirements.\n- Designed, implemented and maintained 98.99% SLAs resulting in improved customer satisfaction.\n- Administered Oracle Applications 10.7 (Financial Module) and TOPAS pension system.\n- Planned, managed and implemented Oracle Applications 11i upgrade.\n- Developed menu driven backup system for Oracle databases and UNIX servers resulting in new, more efficient, online backups which enabled 24x7 business operations.\n- Provided onboarding and mentoring for new hires."
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "**A few of my [GitHub projects](https://github.com/cgswong?tab=repositories).**"
+
+        [[params.projects.list]]
+        title = "docker-aws"
+        url = "https://github.com/cgswong/docker-aws"
+        tagline = "Dockerized AWS CLI."
+
+        [[params.projects.list]]
+        title = "docker-zookeeper"
+        url = "https://github.com/cgswong/docker-zookeeper"
+        tagline = "Dockerized Apache ZooKeeper."
+
+        [[params.projects.list]]
+        title = "docker-kafka"
+        url = "https://github.com/cgswong/docker-kafka"
+        tagline = "Dockerized Apache Kafka, a distributed streaming platform."
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "Python & Django"
+        level = "45%"
+
+        [[params.skills.list]]
+        skill = "Javascript & jQuery"
+        level = "30%"
+
+        [[params.skills.list]]
+        skill = "Go"
+        level = "25%"
+
+        [[params.skills.list]]
+        skill = "Shell scripting"
+        level = "95%"
+
+        [[params.skills.list]]
+        skill = "Docker"
+        level = "90%"
+
+        [[params.skills.list]]
+        skill = "Kubernetes"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "AWS Cloud Architecture"
+        level = "95%"
+
+        [[params.skills.list]]
+        skill = "Google Cloud Architecture"
+        level = "60%"
+
+        [[params.skills.list]]
+        skill = "Big Data Architecture"
+        level = "80%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    #
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = "Carrington Wong"

@@ -7,9 +7,7 @@ theme = "hugo-orbit-theme"
 #googleAnalytics = "UA-XXXXXXX-Y"
 
 # Do not build files for websites. Need them? Set to false
-disableRSS = true
-disableSitemap = true
-disable404 = true
+disableKinds=["404","RSS", "sitemap"]
 
 [params]
 
@@ -80,8 +78,11 @@ disable404 = true
         title = "Certifications"
 
         [[params.certificates.list]]
+        title = "AWS Certified Developer - Associate"
+
+        [[params.certificates.list]]
         title = "AWS Certified Solutions Architect - Associate"
-        cert = "aws-solutions-architect-associate.png"
+        cert = "aws-certifications.png"
 
         [[params.certificates.list]]
         title = "Oracle Certified Expert - RAC 11g and Grid Infrastructure"
@@ -214,7 +215,7 @@ disable404 = true
 
         [[params.skills.list]]
         skill = "Python & Django"
-        level = "45%"
+        level = "50%"
 
         [[params.skills.list]]
         skill = "Javascript & jQuery"
@@ -230,11 +231,11 @@ disable404 = true
 
         [[params.skills.list]]
         skill = "Docker"
-        level = "90%"
+        level = "85%"
 
         [[params.skills.list]]
         skill = "Kubernetes"
-        level = "80%"
+        level = "70%"
 
         [[params.skills.list]]
         skill = "AWS Cloud Architecture"
@@ -242,11 +243,11 @@ disable404 = true
 
         [[params.skills.list]]
         skill = "Google Cloud Architecture"
-        level = "60%"
+        level = "65%"
 
         [[params.skills.list]]
         skill = "Big Data Architecture"
-        level = "80%"
+        level = "75%"
 
     # Footer section
 
